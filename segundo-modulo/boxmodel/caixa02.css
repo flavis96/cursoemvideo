@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightblue;
+    margin: 0px;
+}
+header {
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+    border-radius: 8px;
+}
+header > h1 {
+    text-align: center;
+}
+header > nav {
+    background-color: rgb(156, 156, 156);
+    padding: 14px;
+    margin: 10px;
+    border: 2px solid;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.315);
+    border-radius: 8px;
+}
+nav > a {
+    padding: 7px 30px;
+    margin: 20px 0px;
+    color: white;
+    text-decoration: none;
+}
+nav > a:hover {
+    color: black;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+    border-radius: 3px;
+}
+main {
+    background-color: aliceblue;
+    padding: 15px;
+    margin: 12px 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+    border-radius: 8px;
+}
+article {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0px;
+}
+article > h2 {
+    text-align: center;
+}
+article > p {
+    text-align: justify;
+}
+article > aside {
+    background-color: rgb(208, 233, 255);
+}
+aside > p {
+    text-align: end;
+    padding: 5px 15px 5px 0px;
+}
+aside > p:hover {
+    color: rgb(163, 163, 163);
+}
+aside > p:hover::after {
+    color: rgb(163, 163, 163);
+    content: ' ↞';
+}
+footer {
+    background-color: black;
+}
+footer > p {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 5px;
+}
+footer > p:hover {
+    color: rgb(123, 192, 253);
+}

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/*Regras*/
+
+/*Seletores*/
+body {
+    background-image: linear-gradient(to left, rgb(214, 213, 142), rgb(159, 193, 49));
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(108, 131, 33, 0.714);
+    width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(159, 193, 49);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(91, 110, 28, 0.686);
+    font-family: 'Oswald', serif;
+}
+
+h2 {
+    color: rgb(0, 92, 83);
+}
+
+p {
+    font: normal 1em Arial, sans-serif;
+    text-align: justify;
+    text-indent: 20px;
+}

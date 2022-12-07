@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"> <!--Aqui uso a tag Link para adicionar um ícone na barra da aba do meu site-->
+    <title>Revisão: Parte 1</title>
+</head>
+<body>
+    <h1>As tags h1/h2.../h6 são para hierarquia de títulos.</h1>
+
+    <h2>Por exemplo, esse trecho aqui é 1 abaixo na hierarquia que o trecho acima (no caso esse é uma tag h2 e o de cima é uma tag h1)</h2>
+
+    <p>Existem também parágrafos usando a tag &lt;p&gt;.</p>
+
+    <p>nesse outro paragrafo vou adicionar uma <br>quebra de linha usando a tag &lt;br&gt;.</p>
+
+    <h2>Também posso gerar textos com Lorem como abaixo:</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, atque! Unde voluptates, ipsa beatae dolorum quisquam obcaecati a ipsum dicta fugit explicabo, officia blanditiis aliquid, earum necessitatibus nesciunt. Dolorum, eius.</p>
+
+    <h2>Também posso adicionar símbolos e emojis no site, exemplo: </h2>
+
+    <p>Códigos para fazer os sinais de menor que &lt; e maior que &gt;.</p>
+
+    <p>de moedas: &euro; &yen; &pound; &dollar; etc.</p>
+
+    <p>ou até mesmo emoticons: 	&#x1F383; &#x1F996; usando o site emojipedia e antes do código a 'tag' &#x.</p>
+
+    <h2>Posso adicionar uma imagem ao site usando a tag &lt;img&gt;, exemplo:</h2>
+
+    <img src="imgs/logofla-200.png" alt="Escudo do Flamengo"> <!--Também posso usar comentários no meu código tipo este daqui para lembrar que 'alt' é para descrição da imagem-->
+    
+    <p>Pode ser usado tanto uma imagem baixada quanto um link de uma imagem hospedada</p>
+
+    <p>exemplo de tag &lt;img&gt; com imagem hospedada:</p>
+
+    <img src="https://cdn.iconscout.com/icon/free/png-256/social-486-450634.png" alt="ícone do Linkedin">
+
+    <p>Lembrar de respeitar o direito de imagem</p>
+
+    <h2>Diferença entre tags semânticas (com significado) e tags de forma ou também chamadas não-semânticas (sem significado)</h2>
+
+    <p>Tags como &lt;b&gt; são usadas apenas para dar forma e não tem semântica já a tag &lt;strong&gt; tem semântica, exemplos:</p>
+
+    <p><b>Esse trecho é usando a tag &lt;b&gt;</b></p>
+    <p><strong>Esse trecho é usando a tag &lt;strong&gt;</strong></p>
+
+    <p>Visualmente ambos são iguais, mas em termos de acessibilidade e entendimento do próprio HTML ou também do Google o de cima só altera a forma do texto enquanto o de baixo, altera e também da significado.</p>
+
+    <p>Outro exemplo disso é a tag &lt;i&gt; pra <i>itálico</i> que não é semântico e a tag &lt;em&gt; que é <em>ênfase</em> que é semântico.</p>
+    <p>Também com a tag &lt;u&gt; que é <u>sublinhado</u> que não é semântico e a tag &lt;ins&gt; que é <ins>inserido</ins> que é a forma semântica.</p>
+    
+    <h2>Outros exemplos:</h2>
+
+    <p><small>Letra pequena</small></p>
+    
+    <p><del>texto deletado</del></p>
+
+    <p>texto com parte <sup>sob-escrita</sup></p>
+    
+    <p>texto com parte <sub>sub-escrita</sub></p>
+
+    <p>Temos também uma forma de manter a formatação de um texto no html igual no vscode e no site com a tag &lt;pre&gt;</p>
+
+    <pre>
+            este
+              aqui
+                é
+                um 
+                exemplo.
+    </pre>
+
+    <p>Outro exemplo é a tag para &lt;code&gt; é escrito em JavaScript e com auxílio da tag &lt;pre&gt;</p>
+
+    <pre>
+        <code>
+    num = int(input('digite um número'))
+    if num % 2 == 0
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do Programa')
+        </code>
+    </pre>
+
+    <p>Se for fazer uma Citação é correto usar a tag &lt;q&gt; ao invés de aspas</p>
+
+    <p>Exemplo: Como diria o outro: <q>Tem sempre um melhor que você no mundo!</q></p>
+
+    <p>E pra uma citação mais completa use a tag &lt;blockquote&gt; e use o parâmetro 'cite' para colocar o link de referência </p>
+
+    <blockquote cite="Aqui ficaria o link do livro.">
+        Finja que isto daqui é uma frase de um livro qualquer
+    </blockquote>
+
+    <p>Também podemos colocar explicação de abreviações usando a tag &lt;abbr&gt; por exemplo: <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <p>E também da para fazer um texto <bdo dir="rtl">invertido</bdo> usando a tag &lt;bdo&gt; com o parâmetro 'dir' com <abbr title="Right to Left">rtl</abbr>. </p>
+
+    <h2>Listas ordenadas e Listas não ordenadas</h2>
+
+    <p>Usando a tag &lt;ol&gt; podemos criar uma lista ordenada, por exemplo:</p>
+
+    <h3>Lista de produtos:</h3>
+    <ol>
+        <li>Produto 1</li>
+        <li>Produto 2</li>
+        <li>Produto 3</li>
+        <li>Produto 4</li>
+    </ol>
+
+    <p>Podemos também mudar o tipo usado para ordenar a lista usando o parâmetro 'type' com valores como '1' 'A' 'a' 'I' 'i' e podendo também escolher em qual número começar usando o parâmetro 'start' com valores de '1' até 'infinito', por exemplo:</p>
+
+    <h3>Lista de coisas:</h3>
+    <ol type="A" start="5">
+        <li>Coisa 1</li>
+        <li>Coisa 2</li>
+        <li>Coisa 3</li>
+        <li>Coisa 4</li>
+    </ol>
+
+    <p>Usando a tag &lt;ul&gt; podemos criar uma lista não ordenada, por exemplo:</p>
+
+    <h3>Lista de produtos:</h3>
+    <ul>
+        <li>Produto 1</li>
+        <li>Produto 2</li>
+        <li>Produto 3</li>
+        <li>Produto 4</li>
+    </ul>
+
+    <p>Podemos também modificar a forma usada antes dos produtos usando o parâmetro 'type' com valores como 'circle' 'square' 'disc', por exemplo:</p>
+
+    <h3>Lista de coisas.</h3>
+    <ul type="circle" >
+        <li>Coisa 1</li>
+        <li>Coisa 2</li>
+        <li>Coisa 3</li>
+        <li>Coisa 4</li>
+    </ul>
+
+    <p>Também pode misturar os tipos de listas e fazer lista dentro de lista.</p>
+
+    <h3>Exemplo</h3>
+    <ol>
+        <li>Snes</li>
+        <ul type="disc">
+            <li>Super Mario World</li>
+        </ul>
+        <li>Playstation</li>
+        <ul type="disc">
+            <li>God Of War</li>
+        </ul>
+        <li>Megadrive</li>
+        <ul type="disc">
+            <li>Sonic</li>
+        </ul>
+    </ol>
+
+    <h2>Existem também listas de definição</h2>
+
+    <p>usando a tag &lt;dl&gt; que é 'lista de definição' e as tags que agora não são &lt;li&gt; e sim &lt;dt&gt; e &lt;dd&gt; que significa 'termo a ser definido' e 'descrição do termo' respectivamente, você pode criar uma lista de definição</p>
+
+    <h3>Exemplo</h3>
+    <dl>
+        <dt>Subaru azul</dt>
+        <dd>Carro dos sonhos!</dd>
+    </dl>
+
+    <h1>Links</h1>
+
+    <h2>Temos a opção de usar a tag &lt;a&gt; para fazer ligação entre arquivos html. Exemplo:</h2>
+
+    <p><a href="revpart2.html" target="_self" rel="next">Esse texto aqui leva ao restante da revisão!</a></p>
+</body>
+</html>
