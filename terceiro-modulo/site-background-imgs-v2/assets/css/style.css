@@ -71,11 +71,11 @@ section.imagem > p {
 }
 
 section#img01 {
-    background-image: url(../imgs/);
+    background-image: url(../imgs/background001.jpg);
 }
 
 section#img02 {
-
+    background-image: url(../imgs/background002.jpg);
 }
 
 footer {
