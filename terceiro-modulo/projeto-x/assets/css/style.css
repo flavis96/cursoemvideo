@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: black;
+    background-image: url(../imgs/pilulas-coracao.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+}
+section > p {
+    font-size: 2em;
+    padding: 40px;
+}
+
+section#img {
+    text-shadow: 2px 3px 0px black;
+    background-color: blueviolet;
+    background-image: url(../imgs/Julia.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.219);
+}
+
+#destaque {
+    width: 600px;
+    padding: 10px 0px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.192);
+}
