@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lobster&display=swap');
 
 * {
     margin: 0px;
@@ -6,7 +7,7 @@
 }
 
 html, body {
-    background-color: antiquewhite;
+    background-color: rgb(250, 229, 201);
 }
 
 header {
@@ -16,34 +17,115 @@ header {
     background-size: cover;
     color: white;
     text-align: center;
-    font-size: 3vw;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    font-size: 5vw;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
+
+header > h1 {
+    background-color: rgba(245, 222, 179, 0.377);
+    font-variant: small-caps;
+    text-shadow: 1px 2px 3px black;
+    font-family: 'Lobster', cursive;
+}
+
 section {
     background-color: white;
-    max-width: 800px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.082);
+}
+
+section p.normal {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+section > p > q {
+    display: block;
+    background-color: rgba(252, 222, 182, 0.377);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.089);
+    max-width: 900px;
+    padding: 10px;
     margin: auto;
 }
-section > p {
-    font-size: 2em;
-    padding: 40px;
+
+section aside {
+    background-image: linear-gradient(to right, transparent, rgba(114, 114, 114, 0.144));
+    text-align: right;
+    font-family: 'Lobster', cursive;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+section a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+section a::after {
+    content: ' 🔗';
+    font-size: 16px;
+    display: none;
+}
+
+section a:hover::after {
+    display: inline-block;
 }
 
 section#img {
-    text-shadow: 2px 3px 0px black;
+    text-shadow: 2px 1px 3px black;
     background-color: blueviolet;
-    background-image: url(../imgs/Julia.jpeg);
+    background-image: url(../imgs/pilulas-coracao-2.jpg);
     background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
-    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.219);
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.219);
 }
 
 #destaque {
-    width: 600px;
-    padding: 10px 0px;
+    background-color: rgba(177, 0, 0, 0.26);
+    font-family: 'Lobster', cursive;
+    font-size: 4.5vw;
+    padding: 20px;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.192);
+}
+
+#radius {
+    border-radius: 0px 0px 10px 10px;
+}
+
+div {
+    height: 100px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 7px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgba(255, 255, 0, 0.808);
 }
