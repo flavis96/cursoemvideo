@@ -15,6 +15,17 @@
             border-collapse: collapse;
         }
 
+        /*odd = impar
+        2n-1 = cada primeiro filho de uma tag/mesmo efeito do odd
+        even = par
+        2n = cada segundo filho de uma tag/mesmo efeito de even
+        3n = cada terceiro filho
+        */
+
+        tbody >tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
         thead,
         tfoot {
             background-color: gray;
@@ -26,6 +37,8 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        /*nth-child(2) = configuração do segundo filho de uma tag*/
 
         td:nth-child(2) {
             text-align: right;
