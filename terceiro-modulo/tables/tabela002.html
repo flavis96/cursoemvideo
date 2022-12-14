@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
     <style>
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -13,16 +14,26 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
-        /*odd = impar
-        2n-1 = cada primeiro filho de uma tag/mesmo efeito do odd
-        even = par
-        2n = cada segundo filho de uma tag/mesmo efeito de even
-        3n = cada terceiro filho
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        /*odd = impar ou 2n-1 = cada primeiro filho de uma tag/mesmo efeito do odd
+        even = par ou 2n = cada segundo filho de uma tag/mesmo efeito de even
+        3n = cada terceiro filho. e por ai vai!
         */
 
-        tbody >tr:nth-child(odd) {
+        tbody > tr:nth-child(even) { /*even = par ou 2n*/
+            background-color: wheat;
+        }
+
+        tbody > tr:nth-child(odd) { /*odd = par ou 2n-1*/
             background-color: lightgray;
         }
 
@@ -30,6 +41,12 @@
         tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         td,
@@ -43,17 +60,11 @@
         td:nth-child(2) {
             text-align: right;
         }
-        
-        caption {
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-            background-color: lightgray;
-        }
 
     </style>
 </head>
 <body>
+
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
@@ -65,12 +76,13 @@
             TFOOT
                 TR, TD, TH
     -->
+
     <h1>Uso de tabelas GRANDES</h1>
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
             <th scope="col">Estado</th>
-            <th scope="col" style="width: 50px;">População</th>
+            <th scope="col" style="width: 100px;">População</th>
         </thead>
         <tbody>
             <tr>
