@@ -59,11 +59,13 @@ section aside {
     font-size: 1.7em;
     font-weight: bold;
     padding-right: 40px;
+    box-sizing: border-box;
 }
 
 section a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
 }
 
 section a:hover {
