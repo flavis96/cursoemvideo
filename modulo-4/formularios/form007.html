@@ -10,7 +10,22 @@
     <h1>Testando Formulários</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         
-        
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+                <option value="" selected> --- Escolha --- </option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PA">Parana</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </p>
 
         <p>
             <input type="submit" value="Enviar">
