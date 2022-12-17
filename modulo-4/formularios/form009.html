@@ -9,7 +9,11 @@
 <body>
     <h1>Testando Formulários</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        
+        <p>
+            <label for="inum">Número: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" oninput="ival.innerHTML = Number(inum.value)" required>
+            <output id="ival">5</output>
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
