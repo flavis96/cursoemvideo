@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Testando Formulários</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--Post não tem limitação de quantidade de dados enviada. get tem limite de 3000bytes-->
         
         <p>
             <label for="iest">Estado: </label>
@@ -29,7 +29,18 @@
 
         <p>
             <label for="iprof">Profissão: </label>
-            <input type="text" name="prof" id="iprof">
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <Label for="imsg">Mensagem: </Label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" style="resize: none; width: 50%; height: 200px;" maxlength="1000" placeholder="Sua mensagem aqui. *máximo de 1000 caracteres*"></textarea>
         </p>
 
         <p>
