@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <style>
+        /* Configurações Retrato */
+
+        @media screen and (orientation: portrait) {
+            body {
+                background: url(assets/imgs/cev-portrait.jpg);
+                background-position: center bottom;
+            }
+        }
+
+        /* Configurações Paisagem */
+
+        @media screen and (orientation: landscape) {
+            body {
+                background: url(assets/imgs/cev-landscape.jpg);
+                background-position: left bottom;
+            }
+        }
         /* Configurações Gerais */
 
         * {
@@ -26,25 +43,7 @@
             text-shadow: 2px 2px 0px #1526a7;
             padding: 10px;
         }
-
-        /* Configurações Retrato */
-
-        @media screen and (orientation: portrait) {
-            body {
-                background: url(../imgs/cev-portrait.jpg);
-                background-position: center bottom;
-            }
-        }
-
-        /* Configurações Paisagem */
-
-        @media screen and (orientation: landscape) {
-            body {
-                background: url(../imgs/cev-landscape.jpg);
-                background-position: left bottom;
-            }
-        }
-
+        
     </style>
 </head>
 <body>
