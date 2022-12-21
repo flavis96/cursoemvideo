@@ -18,6 +18,9 @@ header {
 
 header > h1 {
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    padding: 10px;
 }
 
 article {
@@ -31,6 +34,7 @@ article h2 {
 p {
     text-align: justify;
     margin: 10px;
+    line-height: 2em;
 }
 
 nav ul {
@@ -41,8 +45,18 @@ nav ul {
 nav li {
     background-color: darkgray;
     display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 20px;
     padding: 10px;
+    width: 100px;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.63);
+}
+
+nav li:hover {
+    background-color: rgb(56, 56, 56);
+    box-shadow: 1px 1px 5px black;
 }
 
 article {
