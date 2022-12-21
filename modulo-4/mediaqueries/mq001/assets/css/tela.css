@@ -46,7 +46,7 @@ nav li {
 }
 
 article {
-    width: 600px;
+    max-width: 600px;
     display: block;
     margin: auto;
 }
