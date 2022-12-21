@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 /*Estilo para telas*/
 
@@ -20,12 +20,25 @@ header > h1 {
     text-align: center;
 }
 
-menu ul {
+article {
+    padding: 10px;
+}
+
+article h2 {
+    padding-top: 10px;
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+}
+
+nav ul {
     background-color: rgb(83, 82, 82);
     list-style-type: none;
 }
 
-menu li {
+nav li {
     background-color: darkgray;
     display: inline-block;
     padding: 10px;
