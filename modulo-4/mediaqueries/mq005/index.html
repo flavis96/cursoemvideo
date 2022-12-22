@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" media="all">
     <title>Site com Menu Responsivo</title>
 </head>
 <body>
     <header>
         <h1>Site com Menu Responsivo</h1>
-        <nav>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="menu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -30,5 +32,14 @@
             <p>Odio omnis quibusdam reprehenderit nisi ab, iure qui, nobis laudantium ducimus dolores fugiat maiores cupiditate eius totam quasi et molestiae deserunt nesciunt laborum at eveniet esse itaque magni neque! Distinctio!</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
