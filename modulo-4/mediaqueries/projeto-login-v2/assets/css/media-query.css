@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media only screen and (min-width: 768px) {
+    body {
+        background: url(../imgs/background-site.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
     section#login {
         width: 80vw;
     }
