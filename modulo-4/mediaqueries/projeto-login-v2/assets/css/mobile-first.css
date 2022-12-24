@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*
+Paleta de Cores:
+#4C7390
+#CDE4F7
+#82C3F5
+#616D75
+#679AC2
+*/
+
+:root {
+    --cor1: #4C7390;
+    --cor2: #616D75;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    background-image: url(../imgs/background-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 65vh;
+}
+
+main {
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    margin: auto;
+    margin-top: 21vh;
+    border-radius: 25px;
+}
+
+div#imagem {
+    height: 20vh;
+    background-image: url(../imgs/background-login.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+div#formulario > p {
+    padding: 10px;
+    line-height: 1.3em;
+}
